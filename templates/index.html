@@ -82,7 +82,6 @@ style="border:0px;" alt="Web-Stat web tracking"></a></noscript>
             </span>
           {% endfor %}
         </div>
-        <h4> Calculate it here...<a href="https://sgpa-calculator.netlify.com">https://sgpa-calculator.netlify.com</a></h4>
         <div class="form-group col-md-6 col-s-12">
           {{ form.s5.label }}
           {{ form.s5(class_="form-control")}}
@@ -90,6 +89,16 @@ style="border:0px;" alt="Web-Stat web tracking"></a></noscript>
             <span style="color: red; font-family: Arial, Helvetica, sans-serif;">
               [{{ error }}]
             </span>
+          {% endfor %}
+        </div>
+        <h4> Calculate it here...<a href="https://sgpa-calculator.netlify.com">https://sgpa-calculator.netlify.com</a></h4>
+        <div class="form-group col-md-6 col-s-12">
+          {{ form.s6.label }}
+          {{ form.s6(class_="form-control")}}
+          {% for error in form.s6.errors %}
+          <span style="color: red; font-family: Arial, Helvetica, sans-serif;">
+            [{{ error }}]
+          </span>
           {% endfor %}
         </div>
         <input type=submit value=Submit class="btn btn-primary">

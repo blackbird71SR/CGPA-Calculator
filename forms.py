@@ -7,4 +7,5 @@ class SGPAForm(Form):
     s3 = DecimalField('Semester 3 SGPA', places=2, rounding=None, use_locale=False, number_format=None, validators=[validators.DataRequired()])
     s4 = DecimalField('Semester 4 SGPA', places=2, rounding=None, use_locale=False, number_format=None, validators=[validators.DataRequired()])
     s5 = DecimalField('Semester 5 SGPA', places=2, rounding=None, use_locale=False, number_format=None, validators=[validators.DataRequired()])
+    s6 = DecimalField('Semester 6 SGPA', places=2, rounding=None, use_locale=False, number_format=None, validators=[validators.DataRequired()])
     submit = SubmitField('Submit')

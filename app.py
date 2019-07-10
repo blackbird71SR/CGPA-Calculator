@@ -11,6 +11,7 @@ def home():
         s3 = float(request.form['s3'])
         s4 = float(request.form['s4'])
         s5 = float(request.form['s5'])
-        cgpa = (32 * s1 + 35 * s2 + 25 * s3 + 21 * s4 + 25 * s5)/138
+        s6 = float(request.form['s6'])
+        cgpa = (32 * s1 + 35 * s2 + 25 * s3 + 21 * s4 + 25 * s5 + 25 * s6)/163
         return render_template('score.html', cgpa = cgpa)
     return render_template('index.html', form = form)
